@@ -1,0 +1,1 @@
+My project is a RAG based chat bot using langchain and langgraph.it includes the small data base as well. and it also includes streaming feature like chatgpt. i will do some changes into the project in the fututre.
