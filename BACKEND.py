@@ -19,7 +19,7 @@ from langchain_community.tools import DuckDuckGoSearchRun
 # Loading the models with API key
 load_dotenv()
 # Note: Ensure gpt-4.1-mini is available in your region/tier
-llm = ChatOpenAI(model="gpt-4.1-mini")
+llm = ChatOpenAI(model="gpt-4o-mini")
 embeddings = OpenAIEmbeddings(model='text-embedding-3-small')
 
 # Documents loader - Ensure this file exists in your directory!
@@ -128,4 +128,5 @@ def retrive_all_threads():
     # Iterate through checkpoints to find unique thread IDs
     for checkpoint in checkpointer.list(None):
         all_threads.add(checkpoint.config['configurable']['thread_id'])
+
     return list(all_threads)
